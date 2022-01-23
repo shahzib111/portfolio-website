@@ -64,3 +64,12 @@ $(document).ready(function() {
 function hide() {
     $('.btn-ctr').addClass('hidden');
 }
+
+function hideShowMenu() {
+  var x = document.getElementsByClassName('nav')
+  if (x[0].style.display === "block" || x[0].style.display === "") {
+    x[0].style.display = "none";
+  } else {
+    x[0].style.display = "block";
+  }
+}

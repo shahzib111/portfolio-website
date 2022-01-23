@@ -99,6 +99,9 @@ nav a:hover {
   width: 100%;
   border-bottom: 2px solid white;
 }
+.nav{
+  display: block;
+}
 
 .navbar-brand {
         background-color: black;
@@ -261,3 +264,23 @@ input[type=submit]:hover {
 .lifedev {width: 95%; background-color: orange;}
 .languagesR {width: 70%; background-color: #2196F3;}
 .tdd {width: 97%; background-color: orange;}
+
+.menu-icon{
+  cursor: pointer;
+  text-orientation: none;
+  position: fixed;
+  top: -10px;
+  right:0;
+  font-size: 20px;
+}
+
+
+.navbar-hamburger {
+  display: block;
+}
+
+@media screen and (min-width: 800) {
+  #hamburger-icon {
+    display: none;
+  }
+}
