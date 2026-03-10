@@ -1,114 +1,277 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Shahzib Sarfraz</title>
-<!-- <meta http-equiv="refresh" content="5" > this refreshes the page according to the specified number of seconds 
- --> 
+  <title>Accomplishments – Shahzib Sarfraz</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="full">
-  <nav class="navbar navbar-inverse">
-   <div class="container-fluid nav-pos">
-    <div class="navbar-header">
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg site-nav fixed-top">
+    <div class="container-fluid px-4">
       <a class="navbar-brand" href="index.html">Shahzib Sarfraz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navItems">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Experiences.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="Education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Accomplishments.html">Accomplishments</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactme.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <ul id="navItems" class="nav navbar-nav">
-      
-      <li><a href="Experiences.html">Experiences</a></li>
-      <li><a href="Education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="Accomplishments.html">Accomplishments</a></li>
-      <!-- <li><a href="References.html">References</a></li> -->
-     <li><a href="contactme.html">Contact Me</a></li>
-    </ul>
-    <div id="hamburger-icon" onclick="hideShowMenu()">
-      <a class="menu-icon">
-        <i class="fa fa-bars"></i>
-      </a>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Accomplishments</li>
+      </ol>
+    </nav>
+
+    <!-- ===== AWARDS ===== -->
+    <h1 class="page-header-text">Awards &amp; Recognition</h1>
+
+    <div class="glass-card award-card">
+      <span class="award-year">2026</span>
+      <div class="award-title">40 Under 40 Nominee</div>
+      <div class="award-subtitle">Entrepreneur &amp; Business Leader</div>
+      <div class="award-desc">
+        <ul>
+          <li>Recognized for founding and scaling technology-driven ventures and creating practical business solutions for small and mid-sized companies.</li>
+          <li>Honored for actively mentoring students and early-career professionals through industry engagement and community initiatives.</li>
+        </ul>
+      </div>
+      <div class="mt-3">
+        <img src="img/40-under-40.png" alt="40 Under 40 Nomination" class="award-img">
+      </div>
     </div>
+
+    <div class="glass-card award-card">
+      <span class="award-year">2025</span>
+      <div class="award-title">Global CEO of the Year Awards – Southeast USA</div>
+      <div class="award-subtitle">Visionary Leadership Recognition</div>
+      <div class="award-desc">
+        <ul>
+          <li>Recognized for visionary leadership in building and scaling high-growth businesses.</li>
+          <li>Honored for driving operational excellence and creating sustainable value for clients, employees, and the broader business community.</li>
+        </ul>
+      </div>
+      <div class="mt-3">
+        <img src="img/ceo-certificate.png" alt="Global CEO of the Year Certificate" class="award-img">
+      </div>
+    </div>
+
+    <div class="glass-card award-card">
+      <span class="award-year">2024 &amp; 2025</span>
+      <div class="award-title">Georgia's Best in Business Consulting Honoree Award</div>
+      <div class="award-subtitle">Driven Software Solutions</div>
+      <div class="award-desc">
+        <ul>
+          <li>Awarded for excellence in helping businesses scale and optimize operations.</li>
+          <li>Recognized for delivering measurable improvements in efficiency, cost reduction, and profitability for small and mid-size businesses.</li>
+          <li>Honored for innovative solutions in software and payment technologies that drive client success.</li>
+          <li>Celebrated for outstanding consulting practices and a client-focused approach that strengthens business outcomes.</li>
+        </ul>
+        <div class="mt-2">
+          <a href="https://www.8newsnow.com/business/press-releases/ein-presswire/773903306/driven-software-solutions-earns-honorable-mention-in-the-2024-best-of-georgia-awards/" target="_blank">
+            <i class="fas fa-external-link-alt me-1"></i>Read Press Coverage – 8 News Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card award-card">
+      <span class="award-year">Recognition</span>
+      <div class="award-title">Marquis Who's Who in America – Emerging Leader</div>
+      <div class="award-subtitle">Entrepreneurship &amp; Technology</div>
+      <div class="award-desc">
+        <a href="https://www.marquisemergingleaders.com/shahzib-sarfraz" target="_blank">
+          <i class="fas fa-external-link-alt me-1"></i>View Recognition
+        </a>
+      </div>
+    </div>
+
+    <div class="glass-card award-card">
+      <span class="award-year">Recognition</span>
+      <div class="award-title">Marquis Who's Who in America</div>
+      <div class="award-subtitle">Business &amp; Software Development</div>
+      <div class="award-desc">
+        <a href="https://www.24-7pressrelease.com/press-release/488165/shahzib-sarfraz-is-recognized-by-marquis-whos-who-for-career-in-business-and-software-development" target="_blank">
+          <i class="fas fa-external-link-alt me-1"></i>Read Press Release
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== COMMUNITY INVOLVEMENT ===== -->
+    <h1 class="page-header-text" style="margin-top: 48px;">Community Involvement</h1>
+
+    <div class="glass-card community-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+        <div>
+          <div class="award-title"><i class="fas fa-microphone me-2" style="color:var(--accent);"></i>Professional Speaker – AI, Innovation &amp; Career Strategy</div>
+          <div class="award-subtitle">Kennesaw State University</div>
+        </div>
+        <span class="job-date">January 2026</span>
+      </div>
+      <div class="award-desc">
+        <ul>
+          <li>Presented on the intersection of artificial intelligence, entrepreneurship, and the future of work, helping students develop resilient, adaptable career strategies.</li>
+          <li>Addressed misconceptions around AI replacing entry-level roles, offering evidence-based guidance on emerging opportunities and human-centered skills.</li>
+          <li>Advocated for realistic, execution-driven entrepreneurship grounded in problem-solving and operational discipline.</li>
+          <li>Provided actionable career frameworks bridging technical education with industry hiring expectations.</li>
+        </ul>
+      </div>
+      <div class="mt-3">
+        <img src="img/certificate-ksu-guest-speaker.png" alt="KSU Guest Speaker Certificate" class="award-img">
+      </div>
+    </div>
+
+    <div class="glass-card community-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+        <div>
+          <div class="award-title"><i class="fas fa-chalkboard-teacher me-2" style="color:var(--accent);"></i>Advisory Board Member</div>
+          <div class="award-subtitle">Computer Science, Software Engineering &amp; Game Design – Kennesaw State University</div>
+        </div>
+        <span class="job-date">2024 – Present</span>
+      </div>
+      <div class="award-desc">
+        <ul>
+          <li>Providing input on academic programs to ensure alignment with current industry standards, technologies, and workforce needs.</li>
+          <li>Sharing professional expertise to help bridge the gap between classroom learning and real-world application.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="glass-card community-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+        <div>
+          <div class="award-title"><i class="fas fa-handshake me-2" style="color:var(--accent);"></i>Community &amp; Industry Engagement</div>
+        </div>
+        <span class="job-date">2021 – Present</span>
+      </div>
+      <div class="award-desc">
+        <ul>
+          <li>Actively participate in local and industry-focused events to share expertise, promote innovation, and strengthen small business communities.</li>
+          <li>Speak at professional and community events on entrepreneurship, technology, and business growth.</li>
+          <li>Partner with local organizations and universities to advance digital transformation and workforce readiness.</li>
+          <li>Support initiatives that improve business practices, encourage innovation, and create positive outcomes for merchants and clients.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="glass-card community-card">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+        <div>
+          <div class="award-title"><i class="fas fa-user-graduate me-2" style="color:var(--accent);"></i>Internships &amp; Mentorship</div>
+        </div>
+        <span class="job-date">2019 – Present</span>
+      </div>
+      <div class="award-desc">
+        <ul>
+          <li>Provide internships and hands-on learning opportunities to students across Georgia universities, preparing them for real-world projects and industry experience.</li>
+          <li>Provide guidance, advice, and support to students and professionals with diverse skill sets, helping them achieve their personal and career goals.</li>
+          <li>Schedule and facilitate regular meetings to track progress, foster development, and ensure continued growth.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== ACADEMIC HONORS ===== -->
+    <h1 class="page-header-text" style="margin-top: 48px;">Academic Honors</h1>
+
+    <div class="glass-card">
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start gap-3">
+            <i class="fas fa-trophy" style="color:var(--accent); font-size:1.3rem; margin-top:3px;"></i>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); font-size:0.95rem;">Summa Cum Laude – Highest Honors</div>
+              <div style="color:var(--text-muted); font-size:0.82rem;">Bachelor of Software Engineering, Kennesaw State University</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start gap-3">
+            <i class="fas fa-medal" style="color:var(--accent); font-size:1.3rem; margin-top:3px;"></i>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); font-size:0.95rem;">Honors Graduate</div>
+              <div style="color:var(--text-muted); font-size:0.82rem;">Associate of Science, Georgia State University</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start gap-3">
+            <i class="fas fa-list-ol" style="color:var(--accent); font-size:1.3rem; margin-top:3px;"></i>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); font-size:0.95rem;">President's &amp; Dean's List</div>
+              <div style="color:var(--text-muted); font-size:0.82rem;">Multiple semesters, 2015–2019</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start gap-3">
+            <i class="fas fa-star" style="color:var(--accent); font-size:1.3rem; margin-top:3px;"></i>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); font-size:0.95rem;">Honor Society Memberships</div>
+              <div style="color:var(--text-muted); font-size:0.82rem;">Phi Kappa Phi · Golden Key International · National Society of Collegiate Scholars</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- President's List Images -->
+    <div class="section-label">President's List Certificates</div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="glass-card p-2">
+          <img src="img/cday.png" alt="Recognition" style="width:100%; max-height:260px; object-fit:contain; border-radius:8px;">
+          <div class="text-center mt-2"><a href="https://meritpages.com/shahzib111" target="_blank" style="font-size:0.82rem;"><i class="fas fa-external-link-alt me-1"></i>View on MeritPages</a></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card p-2">
+          <img src="img/spring18-presidents-list.png" alt="Spring 2018 President's List" style="width:100%; max-height:260px; object-fit:contain; border-radius:8px;">
+          <div class="text-center mt-2"><a href="https://meritpages.com/shahzib111" target="_blank" style="font-size:0.82rem;"><i class="fas fa-external-link-alt me-1"></i>View on MeritPages</a></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card p-2">
+          <img src="img/fall17-presidents-list.png" alt="Fall 2017 President's List" style="width:100%; max-height:260px; object-fit:contain; border-radius:8px;">
+          <div class="text-center mt-2"><a href="https://meritpages.com/shahzib111" target="_blank" style="font-size:0.82rem;"><i class="fas fa-external-link-alt me-1"></i>View on MeritPages</a></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card p-2">
+          <img src="img/fall16-presidents-list.png" alt="Fall 2016 President's List" style="width:100%; max-height:260px; object-fit:contain; border-radius:8px;">
+          <div class="text-center mt-2"><a href="https://meritpages.com/shahzib111" target="_blank" style="font-size:0.82rem;"><i class="fas fa-external-link-alt me-1"></i>View on MeritPages</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page-wrapper -->
+
+  <!-- Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/shahzib111" class="s-facebook" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://plus.google.com/u/0/103361016199167554844" class="s-google" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+    <a href="https://www.linkedin.com/in/shahzibsarfraz/" class="s-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://play.google.com/store/search?q=shahzib111&c=apps" class="s-android" title="Google Play"><i class="fab fa-android"></i></a>
   </div>
-</nav>
-<ul class="breadcrumb">
-    <li ><a href="index.html" class="bh">Home</a></li>
-    <li ><a href="Accomplishments.html" class="bh">Accomplishments</a></li>
-</ul>
-  <div class="container">
-    <h1 class="header-text">Accomplishments/Awards/certificates</h1>
-    <div class="well">
-      <h3>Honors Graduate | Kennesaw State University</h3>
-      <p><!--<img id="camaro" src="img/camaro.jpg" > -->
-        • Graduated High Honors, top of the class, with a Bachelor's of Software Engineering.
-      </p>
-    </div>
-    <div class="well">
-      <h3>Honors Certificate | Georgia State University Perimeter College</h3>
-      <p><!--<img id="camaro" src="img/camaro.jpg" > -->
-        • Georgia State Perimeter College Honors Certificate for completion of certain number of Honors core classes while maintaining a 3.5 or higher in them.
-      </p>
-    </div>
-    
-    <div class="well">
-      <h3>Marquis Who's Who in America | Recognition as Marquis Emerging Leader</h3>
-      <p><a href="https://www.marquisemergingleaders.com/shahzib-sarfraz">Click here to read more</a></p>
-    </div>
 
-    <div class="well">
-      <h3>Marquis Who's Who in America | Recognition in Business and Software Development</h3>
-      <p><a href="http://www.24-7pressrelease.com/press-release-service/488165">Click here to read more</a></p>
-    </div>
-
-     <div class="well">
-      <p><img id="presidents-list-img" src="img/cday.png" > 
-      </p>
-      <br>
-      <a href="https://meritpages.com/shahzib111">For more info click here.</a>
-    </div>
-
-    <div class="well">
-      <p><img id="presidents-list-img" src="img/spring18-presidents-list.png" > 
-      </p>
-      <br>
-      <a href="https://meritpages.com/shahzib111">For more info click here.</a>
-    </div>
-
-    <div class="well">
-      <p><img id="presidents-list-img" src="img/fall17-presidents-list.png" > 
-      </p>
-      <br>
-      <a href="https://meritpages.com/shahzib111">For more info click here.</a>
-    </div>
-
-    <div class="well">
-       <p><img id="presidents-list-img" src="img/fall16-presidents-list.png" > 
-       </p><br>
-        <a href="https://meritpages.com/shahzib111">For more info click here.</a>
-    </div>
-
-    <div class="well"> 
-      <p>• Honors Society Member</p>
-      <p>• The Honor Society of Phi Kappa Phi Member Nominated</p>
-      <p>• Golden Key International Honor Society Nominated</p>
-      <p>• National Society of Collegiate Scholars Nominated</p>
-    </div>
-  </div>
-  </div>
- </div> 
- <div class="spacer"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
-<div class="btn-ctr">
-<div class="social-media-btn">
-<a href="www.facebook.com/shahzib111" class="fa fa-facebook" target="_blank"></a><br>
-<a href="https://plus.google.com/u/0/103361016199167554844" class="fa fa-google" target="_blank"></a><br>
-<a href="https://www.linkedin.com/in/shahzibsarfraz/" class="fa fa-linkedin" target="_blank"></a><br>
-<a href="https://play.google.com/store/search?q=shahzib111&c=apps" class="fa fa-android" target="_blank"></a><br>
-<script src="script.js"></script>
-</div>
-</div>
 </html>

@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Shahzib Sarfraz</title>
-
+  <title>Shahzib Sarfraz – CEO &amp; Software Engineer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="full">
-  <nav class="navbar navbar-inverse">
-   <div class="container-fluid nav-pos">
-    <div class="navbar-header">
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg site-nav fixed-top">
+    <div class="container-fluid px-4">
       <a class="navbar-brand" href="index.html">Shahzib Sarfraz</a>
-    </div>
-    <ul id="navItems" class="nav navbar-nav">
-      
-      <li><a href="Experiences.html">Experiences</a></li>
-      <li><a href="Education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="Accomplishments.html">Accomplishments</a></li>
-      <!-- <li><a href="References.html">References</a></li> -->
-     <li><a href="contactme.html">Contact Me</a></li>
-    </ul>
-    <div id="hamburger-icon" onclick="hideShowMenu()">
-      <a class="menu-icon">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
-</nav>
- <div class="container">
-  <div class="jumbotron">
-      <img class="self-img" src="img/resumepic.png">
-      <div style="height: 5px;"></div>
-      <h2 style="color: burlywood">Shahzib Sarfraz</h2>
-      <h2>Software Engineer, CEO and Investor</h2>
-      <div class = "home-detail-container"> Seeking to Develop and market industry leading software that provides customers with problem solving tech to help reduce redundancy, increase effeciency and increase customer retention while decreasing overall cost.</div>
-      <div class="button-container">
-        <a class="btn btn-big btn-translucent" href="http://www.24-7pressrelease.com/press-release-service/488165" target="_blank">Biography</a>
-        <a class="btn btn-big btn-translucent" href="Resume2.pdf" target="_blank">Resume</a>
-        <a class="btn btn-big btn-translucent" href="CV.pdf" target="_blank">Cover Letter</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navItems">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Experiences.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="Education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="Accomplishments.html">Accomplishments</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactme.html">Contact</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="page-wrapper">
+    <div class="hero-section">
+      <img class="hero-img" src="img/resumepic.png" alt="Shahzib Sarfraz">
+
+      <div class="hero-name">Shahzib Sarfraz</div>
+      <div class="hero-title">
+        CEO &amp; Founder
+        <span class="hero-divider">|</span>
+        Software Engineer
+        <span class="hero-divider">|</span>
+        Entrepreneur
+      </div>
+
+      <p class="hero-summary">
+        Software engineer and entrepreneur with 8+ years of industry experience in software engineering, analytics, and business leadership.
+        Founder and CEO of a technology firm delivering enterprise solutions in fintech, cloud systems, and digital platforms.
+        Passionate educator and mentor committed to bridging academic theory with real-world application through project-based learning and industry collaboration.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn-hero" href="http://www.24-7pressrelease.com/press-release-service/488165" target="_blank">
+          <i class="fas fa-newspaper me-2"></i>Biography
+        </a>
+        <a class="btn-hero" href="Resume2.pdf" target="_blank">
+          <i class="fas fa-file-alt me-2"></i>Resume
+        </a>
+        <a class="btn-hero" href="CV.pdf" target="_blank">
+          <i class="fas fa-file me-2"></i>Cover Letter
+        </a>
+        <a class="btn-hero" href="https://www.linkedin.com/in/shahzibsarfraz/" target="_blank">
+          <i class="fab fa-linkedin-in me-2"></i>LinkedIn
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">8+</div>
+          <div class="hero-stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">4</div>
+          <div class="hero-stat-label">Degrees Earned</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">3+</div>
+          <div class="hero-stat-label">Industry Awards</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">CEO</div>
+          <div class="hero-stat-label">Driven Software</div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</body>
-<div class="btn-ctr">
-<div class="social-media-btn">
-<a href="www.facebook.com/shahzib111" class="fa fa-facebook" target="_blank"></a><br>
-<a href="https://plus.google.com/u/0/103361016199167554844" class="fa fa-google" target="_blank"></a><br>
-<a href="https://www.linkedin.com/in/shahzibsarfraz/" class="fa fa-linkedin" target="_blank"></a><br>
-<a href="https://play.google.com/store/search?q=shahzib111&c=apps" class="fa fa-android" ></a><br>
-</div>
-</div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!-- Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/shahzib111" class="s-facebook" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://plus.google.com/u/0/103361016199167554844" class="s-google" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+    <a href="https://www.linkedin.com/in/shahzibsarfraz/" class="s-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://play.google.com/store/search?q=shahzib111&c=apps" class="s-android" title="Google Play"><i class="fab fa-android"></i></a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+</body>
 </html>

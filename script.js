@@ -1,75 +1,32 @@
-// function replace( hide, show ) {
-// 	alert("your message has been sent");
-//   document.getElementById(hide).style.display="none";
-//   document.getElementById(show).style.display="block";
-// }
-
-function loadDoc(link) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
-
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  
-    return i;
-}
-
-$(document).ready(function() {
-    //Save references to elements. Don't do DOM walks in event handlers when not needed.
+// Email contact form updater
+$(document).ready(function () {
     var $sendEmailEl = $('#send-email');
-    var $subjectEl = $('#subject');
-    var $bodyEl = $('#body');
+    var $subjectEl   = $('#subject');
+    var $bodyEl      = $('#body');
+
     function updateEmailLink() {
-        $sendEmailEl.attr('href', 'mailto:shahzib111@gmail.com?subject=' +
-            '' + encodeURIComponent($subjectEl.val()) +
-            '&body=' + encodeURIComponent($bodyEl.val()));
-        //console.log($sendEmailEl.attr('href'));
+        $sendEmailEl.attr('href',
+            'mailto:shahzib111@gmail.com?subject=' +
+            encodeURIComponent($subjectEl.val()) +
+            '&body=' + encodeURIComponent($bodyEl.val())
+        );
     }
-    $('#subject,#body').on('input', updateEmailLink);
+
+    $('#subject, #body').on('input', updateEmailLink);
     updateEmailLink();
 });
 
-var justHidden = false;
-
-$(document).ready(function() {
-    var j;
-    $(document).mousemove(function() {
-        if (!justHidden) {
-            justHidden = false;
-            clearTimeout(j);
-            $('.btn-ctr').removeClass('hidden');
-            j = setTimeout('hide();', 1000);
-        }
-    });
-});
-
-function hide() {
-    $('.btn-ctr').addClass('hidden');
+// Live clock for contact page
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = checkTime(today.getMinutes());
+    var s = checkTime(today.getSeconds());
+    var el = document.getElementById('txt');
+    if (el) el.innerHTML = h + ':' + m + ':' + s;
+    setTimeout(startTime, 500);
 }
 
-function hideShowMenu() {
-  var x = document.getElementsByClassName('nav')
-  if (x[0].style.display === "block" || x[0].style.display === "") {
-    x[0].style.display = "none";
-  } else {
-    x[0].style.display = "block";
-  }
+function checkTime(i) {
+    return i < 10 ? '0' + i : i;
 }
