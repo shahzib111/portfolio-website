@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     function updateEmailLink() {
         $sendEmailEl.attr('href',
-            'mailto:shahzib111@gmail.com?subject=' +
+            'mailto:shahzib111@drivensoftwaresolutions.com?subject=' +
             encodeURIComponent($subjectEl.val()) +
             '&body=' + encodeURIComponent($bodyEl.val())
         );
